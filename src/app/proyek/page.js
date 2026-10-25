@@ -1,5 +1,5 @@
 import ProyekCard from "@/components/ProyekCard";
-import { proyek } from "@/data/proyek";
+import { proyek } from "../../data/proyek";
 
 export default function DaftarProyek() {
   return (
