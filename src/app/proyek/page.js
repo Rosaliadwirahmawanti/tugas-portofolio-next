@@ -1,5 +1,13 @@
 import ProyekCard from "@/components/ProyekCard";
-import { proyek } from "../../data/proyek";
+
+// Data proyek langsung ditulis di sini agar 100% aman dari error import
+const proyek = [
+  {
+    id: 1,
+    judul: "Website Portofolio",
+    deskripsi: "Portofolio pribadi menggunakan Next.js dan Tailwind CSS.",
+  },
+];
 
 export default function DaftarProyek() {
   return (
