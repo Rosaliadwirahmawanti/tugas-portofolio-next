@@ -18,7 +18,7 @@ export default function Home() {
         <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
           <Hero
             nama="Rosalia Dwi Rahmawanti"
-            tagline="Siswa kelas X SMK, calon Junior Web Developer di Kelas Industri UBIG."
+            tagline="Siswa kelas X SMKN 01 Kepanjen, calon Junior Web Developer di Kelas Industri UBIG."
           />
         </section>
 
