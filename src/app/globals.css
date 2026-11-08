@@ -1,8 +1,9 @@
 @import "tailwindcss";
+
 @theme {
- --color-utama: #1D3557;
- --color-aksen: #C1121F;
- --color-latar: #F1FAEE;
+  --color-utama: #1D3557;
+  --color-aksen: #C1121F;
+  --color-latar: #F1FAEE;
 }
 
 
@@ -30,3 +31,4 @@
 .nav-links a:hover {
   color: #a8d8ff;
 }
+

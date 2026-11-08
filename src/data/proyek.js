@@ -1,7 +1,7 @@
 export const proyek = [
   {
     slug: "modul-1",
-    judul: "Halaman Profil Pertama",
+    judul: "Modul-1",
     kategori: "HTML, CSS",
     minggu: "Minggu 01",
     gambar: "modul1.png",
@@ -16,7 +16,7 @@ export const proyek = [
 
   {
     slug: "modul-3",
-    judul: "Form Kontak",
+    judul: "Modul-3",
     kategori: "HTML, CSS, JavaScript",
     minggu: "Minggu 03",
     gambar: "modul-3.png",
@@ -31,7 +31,7 @@ export const proyek = [
 
   {
     slug: "modul-2",
-    judul: "Tabel Jadwal Belajar",
+    judul: "Modul-2",
     kategori: "HTML, CSS",
     minggu: "Minggu 02",
     gambar: "modul-2.png",
