@@ -4,7 +4,7 @@ import { useState } from "react";
 import ProyekCard from "@/components/ProyekCard"; 
 
 const daftarKategori = ["Semua", "HTML", "CSS", "Javascript", "Next.js"];
-const tombolBiasa = "rounded-full border border-utama dark:bordersky-200 dark:border-sky-200 px-4 py-1 text-sm font-semibold text-utama dark:text-sky-200 dark:textsky-200 dark:text-sky-200";
+const tombolBiasa = "rounded-full border border-utama dark:bordersky-200 dark:bordersky-200 dark:border-sky-200 px-4 py-1 text-sm font-semibold text-utama dark:textsky-200 dark:text-sky-200 dark:textsky-200 dark:text-sky-200";
 const tombolAktif = "rounded-full border border-aksen bg-aksen px-4 py-1 text-sm font-semibold text-white";
 
 export default function FilterProyek({ proyek }) {  
@@ -55,7 +55,8 @@ export default function FilterProyek({ proyek }) {
             value={kata}
             onChange={(e) => setKata(e.target.value)}
             placeholder="Contoh: modul 1"
-            className="mt-1 w-full rounded-lg border border-gray-300 dark:border-gray-600 dark:border-gray-600 bg-white dark:bg-gray-800 dark:bg-gray-800 p-2 text-gray-800  dark:text-gray-100 dark:text-gray-100 md:w-80"
+            className="mt-1 w-full rounded-lg border border-gray-300
+dark:border-gray-600 dark:border-gray-600 dark:border-gray-600 bg-white dark:bg-gray-800 dark:bg-gray-800dark:bg-gray-800 dark:bg-gray-800 p-2 text-gray-800 dark:text-gray-100 dark:text-gray-100 drak:text-gray-100  dark:text-gray-100 dark:text-gray-100 md:w-80"
           />
 
           {/* KODE 6.6: Tombol Hapus pencarian */}
@@ -63,7 +64,7 @@ export default function FilterProyek({ proyek }) {
             <button
               type="button"
               onClick={() => setKata("")}
-              className="mt-2 text-sm font-semibold text-aksen dark:textred-300  dark:text-red-300 hover:underline block"
+              className="mt-2 text-sm font-semibold text-aksen dark:textred-300 dark:textred-300  dark:text-red-300 hover:underline block"
             >
               Hapus pencarian
             </button>
@@ -71,11 +72,11 @@ export default function FilterProyek({ proyek }) {
         </div>
      
         {/* KODE 6.7: Jumlah hasil pencarian */}
-        <p className="mt-4 text-sm text-gray-600 dark:textgray-400  dark:text-gray-400">
+        <p className="mt-4 text-sm text-gray-600 dark:text-gray-400 dark:textgray-400  dark:textgray-400  dark:text-gray-400">
           Menampilkan {hasil.length} dari {proyek.length} proyek
         </p>
 
-        <p className="mt-4 text-gray-700 dark:textgray-300 dark:text-gray-300">Kategori terpilih: {kategori}</p>      
+        <p className="mt-4 text-gray-700 dark:text-gray-300 dark:textgray-300dark:textgray-300 dark:text-gray-300">Kategori terpilih: {kategori}</p>      
         
         {/* Grid Kartu Proyek */}
         <div className="mt-6 grid gap-6 md:grid-cols-3">        
@@ -85,7 +86,8 @@ export default function FilterProyek({ proyek }) {
         </div> 
         
          {hasil.length === 0 && (  
-            <p className="mt-6 rounded-xl border border-dashed border-gray-300 dark:border-gray-600 dark:border-gray-600 p-6 text-center text-gray-600 dark:textgray-400  dark:text-gray-400">    
+            <p className="mt-6 rounded-xl border border-dashed border-gray-300
+dark:border-gray-600 dark:border-gray-600 dark:border-gray-600 p-6 text-center text-gray-600 dark:text-gray-400 dark:textgray-400  dark:textgray-400  dark:text-gray-400">    
                 Belum ada proyek yang cocok.  
             </p>
          )} 

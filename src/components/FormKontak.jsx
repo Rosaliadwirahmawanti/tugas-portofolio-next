@@ -12,7 +12,9 @@ export default function FormKontak() {
   const [error, setError] = useState({});
   const [success, setSuccess] = useState(false);
 
-  const kelasInput = "w-full px-3.5 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white dark:bg-gray-800 text-black";
+  const kelasInput =
+  "w-full px-3.5 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white";
+
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -58,18 +60,19 @@ export default function FormKontak() {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
       
       {/* Form Section (Kiri - 2 Kolom) */}
-      <div className="md:col-span-2 bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+      <div className="md:col-span-2 bg-white dark:bg-gray-800 dark:bg-gray-800dark:bg-gray-800 p-6 sm:p-8 rounded-xl border border-gray-200
+dark:border-gray-700 dark:border-gray-700 shadow-sm">
         <form onSubmit={handleSubmit} noValidate className="space-y-4">
           
           {success && (
-            <div className="p-4 bg-green-50 border border-green-200 text-green-700 text-sm rounded-lg font-medium">
+            <div className="p-4 bg-green-50 dark:bg-gray-900 dark:bg-gray-900 dark:bg-gray-900 dark:bg-gray-900 border border-green-200 text-green-700 text-sm rounded-lg font-medium">
               Terima kasih! Pesan Anda telah berhasil dikirim.
             </div>
           )}
 
           {/* Nama */}
           <div>
-            <label htmlFor="nama" className="block text-sm font-semibold text-gray-700 dark:textgray-300 mb-1">Nama lengkap</label>
+            <label htmlFor="nama" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 dark:textgray-300dark:textgray-300 mb-1">Nama lengkap</label>
             <input
               type="text"
               id="nama"
@@ -83,7 +86,7 @@ export default function FormKontak() {
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:textgray-300 mb-1">Email</label>
+            <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 dark:textgray-300dark:textgray-300 mb-1">Email</label>
             <input
               type="email"
               id="email"
@@ -97,7 +100,7 @@ export default function FormKontak() {
 
           {/* Nomor HP */}
           <div>
-            <label htmlFor="noHp" className="block text-sm font-semibold text-gray-700 dark:textgray-300 mb-1">Nomor HP</label>
+            <label htmlFor="noHp" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 dark:textgray-300dark:textgray-300 mb-1">Nomor HP</label>
             <input
               type="tel"
               id="noHp"
@@ -111,12 +114,12 @@ export default function FormKontak() {
 
           {/* Keperluan */}
           <div>
-            <label htmlFor="keperluan" className="block text-sm font-semibold text-gray-700 dark:textgray-300 mb-1">Keperluan</label>
+            <label htmlFor="keperluan" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 dark:textgray-300dark:textgray-300 mb-1">Keperluan</label>
             <select
               id="keperluan"
               value={keperluan}
               onChange={(e) => setKeperluan(e.target.value)}
-              className={`${kelasInput} text-gray-600 dark:textgray-400  ${error.keperluan ? "border-red-500" : ""}`}
+              className={`${kelasInput} text-gray-600 dark:text-gray-400 dark:textgray-400  dark:textgray-400  ${error.keperluan ? "border-red-500" : ""}`}
             >
               <option value="">-- Pilih keperluan --</option>
               <option value="kerjasama">Kerjasama Proyek</option>
@@ -129,7 +132,7 @@ export default function FormKontak() {
 
           {/* Pesan */}
           <div>
-            <label htmlFor="pesan" className="block text-sm font-semibold text-gray-700 dark:textgray-300 mb-1">Pesan</label>
+            <label htmlFor="pesan" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 dark:textgray-300dark:textgray-300 mb-1">Pesan</label>
             <textarea
               id="pesan"
               rows="4"
@@ -154,8 +157,9 @@ export default function FormKontak() {
       </div>
 
       {/* Contact Info Section (Kanan - 1 Kolom) */}
-      <div className="md:col-span-1 bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm h-fit">
-        <h3 className="font-bold text-lg mb-4 text-gray-900">Temukan Saya di</h3>
+      <div className="md:col-span-1 bg-white dark:bg-gray-800 dark:bg-gray-800dark:bg-gray-800 p-6 rounded-xl border border-gray-200
+dark:border-gray-700 dark:border-gray-700 shadow-sm h-fit">
+        <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">Temukan Saya di</h3>
         
         <div className="space-y-3">
           <div>

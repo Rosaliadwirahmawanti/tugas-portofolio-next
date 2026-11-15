@@ -17,7 +17,8 @@ export default function Home() {
       <div className="mx-auto max-w-5xl space-y-14">
 
         {/* HERO */}
-        <section className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-10">
+        <section className="rounded-2xl border border-gray-200
+dark:border-gray-700 dark:border-gray-700 bg-white dark:bg-gray-800 dark:bg-gray-800dark:bg-gray-800 p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-10">
           <Hero
             nama="Rosalia Dwi Rahmawanti"
             tagline="Siswa kelas X SMK, calon Junior Web Developer di Kelas Industri UBIG."
@@ -95,7 +96,8 @@ export default function Home() {
             {proyek.slice(0, 3).map((item) => (
               <article
                 key={item.slug}
-                className="overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
+                className="overflow-hidden rounded-2xl border border-gray-200
+dark:border-gray-700 dark:border-gray-700 bg-white dark:bg-gray-800 dark:bg-gray-800dark:bg-gray-800 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
               >
                 {item.image && (
                   <img
@@ -110,7 +112,7 @@ export default function Home() {
                     {item.title}
                   </h3>
 
-                  <p className="mt-2 leading-6 text-gray-600 dark:textgray-400  dark:text-gray-300">
+                  <p className="mt-2 leading-6 text-gray-600 dark:text-gray-400 dark:textgray-400  dark:textgray-400  dark:text-gray-300">
                     {item.description}
                   </p>
 
