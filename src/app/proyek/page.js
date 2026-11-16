@@ -3,7 +3,7 @@ import { proyek } from "@/data/proyek"; // Menggunakan 'proyek' sesuai saran err
 
 export default function ProyekPage() {
   return (
-    <main className="min-h-screen bg-[#f0fdf4] py-10 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-[#f0fdf4] py-10 px-4 sm:px-6 lg:px-8 dark:bg-gray-900 dark:text-gray-100">
       <div className="max-w-5xl mx-auto space-y-6">
         <div>
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Proyek Saya</h1>

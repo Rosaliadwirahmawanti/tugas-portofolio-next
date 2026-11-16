@@ -1,5 +1,5 @@
 ## Tabel `skills`
-Daftar keahlian Andi Pratama.
+Daftar keahlian Rosalia Dwi Rahmawanti.
 | Kolom | Tipe | Keterangan |
 | --- | --- | --- |
 | `id` | `int8` | Primary key, nomor otomatis 1, 2, 3, ... |

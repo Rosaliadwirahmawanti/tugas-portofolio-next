@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Hero from "../components/Hero";
 import SkillCard from "../components/SkillCard";
+import { buttonVariants } from "@/components/ui/button";
 import { proyek } from "../data/proyek";
 
 const skills = [
@@ -27,7 +28,7 @@ dark:border-gray-700 dark:border-gray-700 bg-white dark:bg-gray-800 dark:bg-gray
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
               href="/tentang"
-              className="rounded-lg bg-red-700 px-5 py-3 font-semibold text-white transition hover:bg-red-800"
+              className={buttonVariants({ variant: "default" })}
             >
               Tentang Saya
             </Link>
@@ -84,10 +85,8 @@ dark:border-gray-700 dark:border-gray-700 bg-white dark:bg-gray-800 dark:bg-gray
               </h2>
             </div>
 
-            <Link
-              href="/proyek"
-              className="font-semibold text-red-700 hover:underline dark:text-red-400"
-            >
+            <Link href="/proyek" className={buttonVariants({ size: "lg",
+className: "mt-6" })}>
               Lihat semua proyek →
             </Link>
           </div>

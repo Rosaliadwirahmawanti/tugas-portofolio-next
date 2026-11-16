@@ -1,6 +1,6 @@
 export default function Tentang() {
   return (
-    <main className="min-h-screen bg-[#f0fdf4] py-10 px-4">
+    <main className="min-h-screen bg-[#f0fdf4] py-10 px-4 dark:bg-gray-900 dark:text-gray-100 md:px-8">
       <div className="mx-auto max-w-5xl space-y-6">
         
         {/* JUDUL */}
