@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-export default function TombolTema() {
+export default function TombolTema() {}
   const [gelap, setGelap] = useState(false);
 
   function gantiTema() {
@@ -11,13 +11,12 @@ export default function TombolTema() {
     setGelap((sebelumnya) => !sebelumnya);
   }
 
-  return (
-    <button
-  type="button"
-  onClick={gantiTema}
-  className="rounded-lg border border-white px-3 py-1 text-sm font-semibold text-white hover:..."
->
-  {gelap ? "🌞 Mode Terang" : "🌙 Mode Gelap"}
-</button>
-  );
-}
+ return (
+  <Button
+    variant="outline"
+    onClick={gantiTema}
+    className="border-white bg-transparent text-white hover:bg-aksen hover:text-white"
+  >
+    {gelap ? "Mode Terang" : "Mode Gelap"}
+  </Button>
+);
