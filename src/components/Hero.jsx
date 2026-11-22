@@ -1,28 +1,50 @@
+
 import Image from "next/image";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 
-export default function Hero({ nama, tagline }) {
+export default function Hero({
+  nama = "Rosalia Dwi Rahmawanti",
+  tagline = "Siswa kelas X SMK, calon Junior Web Developer di Kelas Industri UBIG.",
+}) {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-6">
-      {/* FOTO PROFIL */}
-      <div className="w-32 h-32 rounded-full border-4 border-red-500 overflow-hidden shadow-md shrink-0 relative bg-slate-200">
-        <Image 
-          src="/images rosa.png" // Pastikan nama file ini sama persis dengan yang ada di folder public
-          alt="Foto Profil"
-          fill
-          className="object-cover"
-        />
-      </div>
+    <section className="flex flex-col items-center gap-4 py-8 md:flex-row md:gap-6">
+      <Image
+        src="/images rosa.png"
+        alt="Foto Rosalia"
+        width={120}
+        height={120}
+        className="h-24 w-24 rounded-full border-2 border-red-500 object-cover md:h-28 md:w-28"
+      />
 
-      {/* TEKS SAMBUTAN */}
-      <div>
-        <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
+      <div className="flex-1 text-center md:text-left">
+        <h1 className="text-2xl font-bold text-primary md:text-3xl">
           Halo, saya {nama}!
         </h1>
-        <p className="text-slate-600 text-base md:text-lg">
+
+        <p className="mt-2 text-sm text-muted-foreground">
           {tagline}
         </p>
+
+        <div className="mt-5 flex flex-wrap justify-center gap-3 md:justify-start">
+          <Link
+            href="/proyek"
+            className={buttonVariants({ size: "sm" })}
+          >
+            Lihat Proyek
+          </Link>
+
+          <Link
+            href="/kontak"
+            className={buttonVariants({
+              variant: "outline",
+              size: "sm",
+            })}
+          >
+            Hubungi Saya
+          </Link>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
-

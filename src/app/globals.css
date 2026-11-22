@@ -10,6 +10,15 @@
   --color-latar: #F1FAEE;
 }
 
+@theme {
+ --color-utama: #1D3557;
+ --color-latar: #F1FAEE;
+}
+@theme inline {
+ --color-aksen: var(--aksen);
+ /* ... baris lain tetap ... */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;

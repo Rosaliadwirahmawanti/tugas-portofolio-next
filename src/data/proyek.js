@@ -4,7 +4,7 @@ export const proyek = [
     judul: "Modul-1",
     kategori: "HTML, CSS",
     minggu: "Minggu 01",
-    gambar: "modul1.png",
+    gambar: "/modul1.png",
     deskripsi:
       "Modul pertama yang saya buat menggunakan HTML dan CSS dasar saat pertama kali belajar pemrograman website.",
     fitur: [
@@ -19,7 +19,7 @@ export const proyek = [
     judul: "Modul-3",
     kategori: "HTML, CSS, JavaScript",
     minggu: "Minggu 03",
-    gambar: "modul-3.png",
+    gambar: "/modul-3.png",
     deskripsi:
       "Modul ketiga yang dibuat menggunakan HTML, CSS, serta JavaScript dasar.",
     fitur: [
@@ -34,7 +34,7 @@ export const proyek = [
     judul: "Modul-2",
     kategori: "HTML, CSS",
     minggu: "Minggu 02",
-    gambar: "modul-2.png",
+    gambar: "/modul-2.png",
     deskripsi:
       "Modul kedua yang dibuat menggunakan HTML dan CSS dasar.",
     fitur: [
