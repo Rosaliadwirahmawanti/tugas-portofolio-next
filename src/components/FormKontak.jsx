@@ -84,7 +84,7 @@ export default function FormKontak() {
           id="nama"
           value={nama}
           onChange={(e) => setNama(e.target.value)}
-          placeholder="Contoh: Andi Wijaya"
+          placeholder="Contoh:fajar pratama"
           className={`${kelasInput} ${error.nama ? "border-red-500" : ""}`}
         />
 
@@ -104,7 +104,7 @@ export default function FormKontak() {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Contoh: andi@gmail.com"
+          placeholder="Contoh:fajar@gmail.com"
           className={`${kelasInput} ${error.email ? "border-red-500" : ""}`}
         />
 
